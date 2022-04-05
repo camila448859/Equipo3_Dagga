@@ -26,19 +26,31 @@ function xd(){
 
 function evaluar(){
 
-    var num1=(parseFloat(document.problema2.n1.value)).toFixed(2);
-    var num2=(parseFloat(document.problema2.n2.value)).toFixed(2);
-    var num3=(parseFloat(document.problema2.n3.value)).toFixed(2);
-    var resultado=0
+    var num1=parseFloat(document.getElementById('n1').value);
+    var num2=parseFloat(document.getElementById('n2').value);
+    var num3=parseFloat(document.getElementById('n3').value);
+
+    var n1 = num1;
+    var n2 = num2;
+    var n3 = num3;
+
+    var may=0
     
-    if (num1>num2 && num1>num3)
-        resultado=num1;
-    else if (num2>num1 && num2>num3)
-        resultado=num2;
-    else if (num3>num1 && num3>num2)
-        resultado=num3; 
-        
-    document.getElementById('p2-salida').textContent=resultado;
+    if(n1>=n2 && n1>=n3){
+        may=n1
+        if(n1==n2 || n1==n3){
+            document.getElementById('p2-salida').textContent=may.toFixed(2);
+        }
+    }
+    else if(n2>=n1 && n2>=n3){
+        may=n2
+        if(n2==n1 || n1==n2){
+            document.getElementById('p2-salida').textContent=may.toFixed(2);
+        }
+    }
+    else
+        may=n3
+    document.getElementById('p2-salida').textContent=may.toFixed(2);
 }
 
 function sueldoext(){
