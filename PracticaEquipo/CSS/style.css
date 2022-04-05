@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(154, 194, 255, 0.39);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: center;
+}
+.p1{
+  background-color: rgba(251, 71, 71, 0.518);  
+}
+.p2{
+    background-color: rgba(221, 137, 255, 0.518);  
+  }
+.p3{
+    background-color: rgba(122, 248, 244, 0.604);  
+  }
+.p4{
+    background-color: rgba(131, 255, 185, 0.601);  
+  }
+.tablita{
+    background-color: rgba(153, 255, 130, 0.516);
+    border-radius: 1rem;
+}
+.bottom{
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
