@@ -26,22 +26,19 @@ function xd(){
 
 function evaluar(){
 
-    var num1=document.problema2.n1.value;
-    var num2=document.problema2.n2.value;
-    var num3=document.problema2.n3.value;
+    var num1=(parseFloat(document.problema2.n1.value)).toFixed(2);
+    var num2=(parseFloat(document.problema2.n2.value)).toFixed(2);
+    var num3=(parseFloat(document.problema2.n3.value)).toFixed(2);
+    var resultado=0
     
-    if (num1>num2 && num1>num3){ 
-        alert(num1);
-        resultado= num1;
-    }
+    if (num1>num2 && num1>num3)
+        resultado=num1;
     else if (num2>num1 && num2>num3)
-    {       alert(num2);
-            resultado=num2;
-        } else {
-            alert(num3);
-            resultado=num3; 
-        }
-        document.getElementById('p2-salida').textContent=resultado;
+        resultado=num2;
+    else if (num3>num1 && num3>num2)
+        resultado=num3; 
+        
+    document.getElementById('p2-salida').textContent=resultado;
 }
 
 function sueldoext(){
